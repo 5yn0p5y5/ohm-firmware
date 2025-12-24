@@ -20,8 +20,8 @@
                     <&gpio0 10 GPIO_ACTIVE_HIGH>, //COL6
                     <&gpio1 11 GPIO_ACTIVE_HIGH>, //COL7
                     <&gpio1 13 GPIO_ACTIVE_HIGH>, //COL8
-                    <&gpio1 15 GPIO_ACTIVE_HIGH>; //COL9
-                    <&gpio0 2  GPIO_ACTIVE_HIGH>; //COL10
+                    <&gpio1 15 GPIO_ACTIVE_HIGH>, //COL9
+                    <&gpio0 2  GPIO_ACTIVE_HIGH>, //COL10
                     <&gpio0 29 GPIO_ACTIVE_HIGH>; //COL11
 
     };
