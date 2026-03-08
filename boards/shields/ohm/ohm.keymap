@@ -71,9 +71,9 @@
         nav {
             bindings = <
   &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &kp TAB         &kp HOME  &kp INS    &kp END    &kp DELETE                   &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
-                                      &trans     &trans      &trans            &mo 3  &trans            &kp RSHFT
+  &kp ESC        &kp LALT  &kp LSHFT  &kp RALT   &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
+  &kp TAB        &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
+                           &trans     &trans     &trans                        &mo 3            &trans           &kp RSHFT
             >;
 
             display-name = "left";
@@ -81,9 +81,9 @@
 
         sym {
             bindings = <
-  &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UP       &kp RBKT        &kp BACKSPACE
+  &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UP       &kp RBKT        &kp LC(BSPC)
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &kp LEFT         &kp DOWN     &kp RIGHT       &kp ENTER
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE    &kp AMPS        &kp BACKSPACE
+  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp LS(FSLH) &kp MINUS       &kp BACKSPACE
                                                     &trans           &trans      &mo 3            &trans     &kp C_PP     &trans
             >;
 
