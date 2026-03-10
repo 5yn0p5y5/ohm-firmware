@@ -83,7 +83,7 @@
             bindings = <
   &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UP       &kp RBKT        &kp LC(BSPC)
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &kp LEFT         &kp DOWN     &kp RIGHT       &kp ENTER
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp LS(FSLH) &kp MINUS       &kp BACKSPACE
+  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &kp LS(N2) &kp PIPE         &kp LS(FSLH) &kp MINUS       &kp BACKSPACE
                                                     &trans           &trans      &mo 3            &trans     &kp C_PP     &trans
             >;
 
