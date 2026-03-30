@@ -1,0 +1,95 @@
+draw_config:
+  key_h: 35  # default is 56
+  key_w: 35  # default is 56
+
+layout: {zmk_keyboard: ohm, layout_name: physical_layout0}
+layers:
+  base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - [A, S, D, F, G, H, J, K, L, ;]
+  - [Z, X, C, V, B, N, M, ',', ., '''']
+  - [LSHFT, LCTRL, left, right, SPACE, RCTRL]
+  left:
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - - ESC
+    - LALT
+    - LSHFT
+    - RALT
+    - ENTER
+    - PRINTSCREEN
+    - {t: LEFT, h: RCTRL}
+    - {t: DOWN, h: RSHFT}
+    - {t: UP, h: LALT}
+    - {t: RIGHT, h: RGUI}
+  - - TAB
+    - HOME
+    - INS
+    - END
+    - DELETE
+    - CAPS
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BACKSPACE
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - both
+    - {t: ▽, type: trans}
+    - RSHFT
+  right:
+  - ['', <, '=', '>', '`', ^, '[', UP, ']', Ctl+BSPC]
+  - - {t: \, h: LGUI}
+    - {t: (, h: LALT}
+    - {t: '-', h: LSHFT}
+    - {t: ), h: LCTRL}
+    - +
+    - '%'
+    - LEFT
+    - DOWN
+    - RIGHT
+    - ENTER
+  - ['#', '*', ':', /, '', Sft+2, '|', Sft+/, '-', BACKSPACE]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - both
+    - {type: held}
+    - PP
+    - {t: ▽, type: trans}
+  both:
+  - - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F4
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - BT CLR
+  - - LGUI
+    - LALT
+    - LSHFT
+    - RALT
+    - F8
+    - {t: ▽, type: trans}
+    - {t: VOL DN, h: RCTRL}
+    - MUTE
+    - VOL UP
+    - RGUI
+  - - '&studio_unlock'
+    - F9
+    - F10
+    - F11
+    - F12
+    - {t: ▽, type: trans}
+    - PREV
+    - PP
+    - NEXT
+    - '&studio_unlock'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
