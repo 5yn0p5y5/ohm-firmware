@@ -2,37 +2,55 @@ layout: {zmk_keyboard: ohm, layout_name: physical_layout0}
 layers:
   base:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - [A, S, D, F, G, H, J, K, L, SEMICOLON]
-  - [Z, X, C, V, B, N, M, COMMA, DOT, SQT]
-  - [LSHFT, LCTRL, left, right, SPACE, RCTRL]
+  - [A, S, D, F, G, H, J, K, L, ;]
+  - [Z, X, C, V, B, N, M, ',', ., '''']
+  - ['$$mdi:apple-keyboard-shift$$', LCTRL, left, right, '$$mdi:keyboard-space$$', RCTRL]
   left:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-  - [ESC, LALT, LSHFT, RALT, ENTER, PRINTSCREEN, LEFT, DOWN, UP, RIGHT]
-  - - TAB
+  - [ESC, LALT, '$$mdi:apple-keyboard-shift$$', RALT, '$$mdi:keyboard-return$$', PRTSC, '$$mdi:arrow-left$$', '$$mdi:arrow-down$$', '$$mdi:arrow-up$$', '$$mdi:arrow-right$$']
+  - - $$mdi:keyboard-tab$$
     - HOME
     - INS
     - END
-    - DELETE
-    - CAPS
-    - ''
+    - $$mdi:backspace-reverse-outline$$
+    - $$mdi:keyboard-caps$$
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ⌫
+    - {t: ▽, type: trans}
+    - $$mdi:backspace$$
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - both
     - {t: ▽, type: trans}
-    - RSHFT
+    - $$mdi:apple-keyboard-shift$$
   right:
-  - ['', LT, EQUAL, GT, GRAVE, CARET, LBKT, UP, RBKT, Ctl+BSPC]
-  - [BSLH, LPAR, MINUS, RPAR, PLUS, PRCNT, LEFT, DOWN, RIGHT, ENTER]
-  - [HASH, STAR, COLON, FSLH, '', '?', PIPE, '-', MINUS, ⌫]
+  - - {t: ▽, type: trans}
+    - <
+    - '='
+    - '>'
+    - '`'
+    - ^
+    - '['
+    - $$mdi:arrow-up$$
+    - ']'
+    - {t: '$$mdi:backspace$$', h: Ctl}
+  - [\, (, '-', ), +, '%', '$$mdi:arrow-left$$', '$$mdi:arrow-down$$', '$$mdi:arrow-right$$', '$$mdi:keyboard-return$$']
+  - - '#'
+    - '*'
+    - ':'
+    - /
+    - {t: ▽, type: trans}
+    - '@'
+    - '|'
+    - '?'
+    - '-'
+    - $$mdi:backspace$$
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - both
     - {type: held}
-    - PP
+    - $$mdi:play-pause$$
     - {t: ▽, type: trans}
   both:
   - - {t: ▽, type: trans}
@@ -45,26 +63,26 @@ layers:
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
     - BT CLR
-  - - LGUI
+  - - $$mdi:microsoft-windows$$
     - LALT
-    - LSHFT
+    - $$mdi:apple-keyboard-shift$$
     - RALT
     - F8
     - {t: ▽, type: trans}
-    - VOL DN
-    - MUTE
-    - VOL UP
-    - RGUI
-  - - 'ZMK'
+    - $$mdi:volume-low$$
+    - $$mdi:volume-mute$$
+    - $$mdi:volume-high$$
+    - $$mdi:microsoft-windows$$
+  - - ZMK
     - F9
     - F10
     - F11
     - F12
     - {t: ▽, type: trans}
-    - PREV
-    - PP
-    - NEXT
-    - 'ZMK'
+    - $$mdi:skip-previous$$
+    - $$mdi:play-pause$$
+    - $$mdi:skip-next$$
+    - ZMK
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}

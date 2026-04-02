@@ -2,9 +2,10 @@ draw_config:
   glyph_tap_size: 18
   svg_extra_style: |
     rect.held { fill: #ba4e47; }
-
 parse_config:
   raw_binding_map:
+    "&mo 1": {t: "left", type: held}
+    "&mo 2": {t: "right", type: held}
     "&kp BACKSPACE": {t: "$$mdi:backspace$$"}
     "&studio_unlock": {t: "ZMK"}
     "&kp LC(BSPC)": {t: "$$mdi:backspace$$", h: "Ctl"}
