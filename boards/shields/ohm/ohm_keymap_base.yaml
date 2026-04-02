@@ -1,0 +1,11 @@
+layout: {zmk_keyboard: ohm, layout_name: physical_layout0}
+draw_config:
+  svg_extra_style: |
+    rect.held { fill: #ba4e47; }
+    g.key:has(text.layer-activator) rect.key { fill: #ba4e47; }
+layers:
+  base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - [A, S, D, F, G, H, J, K, L, ;]
+  - [Z, X, C, V, B, N, M, ',', ., '''']
+  - [LSHFT, LCTRL, {t: left, type: held}, {t: right, type: held}, SPACE, RCTRL]

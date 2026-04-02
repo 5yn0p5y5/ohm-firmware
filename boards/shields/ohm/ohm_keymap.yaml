@@ -2,12 +2,12 @@ layout: {zmk_keyboard: ohm, layout_name: physical_layout0}
 layers:
   base:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - [A, S, D, F, G, H, J, K, L, ;]
-  - [Z, X, C, V, B, N, M, ',', ., '''']
+  - [A, S, D, F, G, H, J, K, L, SEMICOLON]
+  - [Z, X, C, V, B, N, M, COMMA, DOT, SQT]
   - [LSHFT, LCTRL, left, right, SPACE, RCTRL]
   left:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-  - [ESC, LALT, LSHFT, RALT, ENTER, PRINTSCREEN, '&kpLEFT', DOWN, '&hmr LALT UP', RIGHT]
+  - [ESC, LALT, LSHFT, RALT, ENTER, PRINTSCREEN, LEFT, DOWN, UP, RIGHT]
   - - TAB
     - HOME
     - INS
@@ -17,7 +17,7 @@ layers:
     - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - BACKSPACE
+    - ⌫
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
@@ -25,9 +25,9 @@ layers:
     - {t: ▽, type: trans}
     - RSHFT
   right:
-  - ['', <, '=', '>', '`', ^, '[', UP, ']', Ctl+BSPC]
-  - [\, (, '&kb MINUS', ), +, '%', LEFT, DOWN, RIGHT, ENTER]
-  - ['#', '*', ':', /, '', Sft+2, '|', Sft+/, '-', BACKSPACE]
+  - ['', LT, EQUAL, GT, GRAVE, CARET, LBKT, UP, RBKT, Ctl+BSPC]
+  - [BSLH, LPAR, MINUS, RPAR, PLUS, PRCNT, LEFT, DOWN, RIGHT, ENTER]
+  - [HASH, STAR, COLON, FSLH, '', '?', PIPE, '-', MINUS, ⌫]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - both
@@ -55,7 +55,7 @@ layers:
     - MUTE
     - VOL UP
     - RGUI
-  - - '&studio_unlock'
+  - - 'ZMK'
     - F9
     - F10
     - F11
@@ -64,7 +64,7 @@ layers:
     - PREV
     - PP
     - NEXT
-    - '&studio_unlock'
+    - 'ZMK'
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
